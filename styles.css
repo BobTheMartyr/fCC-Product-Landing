@@ -1,0 +1,307 @@
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  background-color: #eee;
+  padding: 0;
+  margin: 0;
+}
+
+#header{
+  display: flex;
+  top: 0;
+  left: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 10%;
+  position: fixed;
+  width: 100%;
+  background-color: #eee;
+}
+
+#left{
+  display: flex;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  padding-left: 5%;
+}
+
+#kat{
+  color:#dd2700;
+}
+
+#header-img{
+  object-fit: contain;
+  height: 50px;
+}
+
+#nav-bar{
+  width: 40%;
+  font-family: 'Raleway',sans-serif;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+a{
+  color: black;
+}
+
+#form-wrapper{
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#form-h1{
+  font-size: 2em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+}
+
+#form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input{
+  border: .5px solid black
+}
+
+#email{
+  width: 100%;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#submit{
+  background-color: #dd2700;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+#container{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#features{
+  margin: 30px auto;
+  max-width: 600px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid{
+  display: flex;
+}
+
+
+#features .desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  height: 125px;
+  padding: 5px;
+}
+
+#features .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: #dd2700
+}
+
+i{
+ font-size: 3em;
+ padding-right: 50%; 
+}
+
+.desc h2{
+  margin: 0;
+  font-size: 2em;
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+}
+
+.desc p{
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#embed-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#vid-cap{
+  font-family: sans-serif;
+  text-align: left;
+  width: 560px;
+  padding-top: 2px;
+  background-color: #ccc; 
+  border: 2px double black; 
+  padding-left: 2px;
+}
+
+#testimonial-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 100px auto;
+  width: 100%;
+  max-width: 2000px;
+  background-color: #ccc;
+  height: 330px;
+  overflow: auto;
+  border-radius: 20px;
+}
+
+.test-image{
+  object-fit: contain;
+  height: 200px;
+  width: 200px;
+}
+
+.quote{
+  width: 250px;
+  font-family: sans-serif;
+  height: 300px;
+
+}
+
+.quote h4{
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+}
+
+.quote p{
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+h3{
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#pricing-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 300px;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  width: 250px;
+}
+
+.level{
+  font-family: sans-serif;
+  font-weight: 700;
+  background-color: #ccc;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product h2{
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.product ul{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.product li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;  
+}
+
+button{
+  margin-top: 10%;
+  width: 50%;
+  background-color: #dd2700;
+  border: none;
+}
+
+footer{
+  width: 100%;
+  background-color: #ccc;
+  height: 20px;
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px){
+  #header{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+  }
+  #features{
+    justify-content: center;
+  }
+  .grid{
+    justify-content: center;
+    overflow: auto;
+  }
+  #nav-bar{
+    flex-direction: column;
+  }
+  #header-img{
+    display: none;
+  }
+  #form-wrapper{
+    padding-top: 100px;
+  }
+  i{
+    visibility: hidden;
+  }
+  iframe{
+    width: 300px;
+    height: 200px;
+  }
+  #vid-cap{
+    visibility: hidden;
+  }
+  #testimonial-container{
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+  }
+}
